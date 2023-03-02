@@ -187,3 +187,20 @@ print(python.find("Java")) # 원하는 값이 없는 경우 -1을 반환
 
 print(python.count("n"))
 '''
+python= "Python is Amazing"
+print(python.lower()) #소문자로 변화
+print(python.upper()) #대문자로 변화
+print(python[0].isupper()) #0인덱스가 대문자인지 blood
+print(len(python)) # 문자열 개수
+print(python.replace("Python","Java")) # 문자열 
+
+index = python.index('n') # python 변수에서 "n"이 있는 인덱스 위치
+print(index) #5번째
+
+index= python.index('n', index +1) # python 변수에서 처음 n 다음부터 찾음
+print(index)
+
+print(python.find("Java")) # 원하는 값이 없는 경우 -1을 반환
+#print(python.index("Java")) # 오류가 발생하면서 프로그램 오류로 다음 코딩 내용 안내려옴
+
+print(python.count("n"))
