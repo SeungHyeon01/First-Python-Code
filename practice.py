@@ -187,21 +187,13 @@ print(python.find("Java")) # 원하는 값이 없는 경우 -1을 반환
 
 print(python.count("n"))
 '''
-# 문자열 처리함수
-python= "Python is Amazing"
-print(python.lower()) #소문자로 변화
-print(python.upper()) #대문자로 변화
-print(python[0].isupper()) #0인덱스가 대문자인지 blood
-print(len(python)) # 문자열 개수
-print(python.replace("Python","Java")) # 문자열 
+jumin = '940917-1234567'
 
-index = python.index('n') # python 변수에서 "n"이 있는 인덱스 위치
-print(index) #5번째
+print("성별 : " +jumin[7])
+print("연 :"+ jumin[0:2] ) # 0~2 직적의 인덱스 까지 즉 0,1 인덱스 값을 가져옵니다.
+print("월 : "+ jumin[2:4])
+print("일 : "+jumin[4:6])
 
-index= python.index('n', index +1) # python 변수에서 처음 n 다음부터 찾음
-print(index)
-
-print(python.find("Java")) # 원하는 값이 없는 경우 -1을 반환
-#print(python.index("Java")) # 오류가 발생하면서 프로그램 오류로 다음 코딩 내용 안내려옴
-
-print(python.count("n"))
+print("생년월일 : "+jumin[:6]) # 처움부터 6 직전까지
+print("뒤 7자리 : "+jumin[7:]) # 7부터 끝까지 
+print(" 뒤 7자리 (뒤에부터)" + jumin[-7:]) # 맨 뒤에서 7번째 부터 끝까지
